@@ -22,7 +22,7 @@ export const loader = (queryClient) => async ({params}) => {
   return { id};
 };
 
-const CockTail = () => {
+const Cocktail = () => {
   const {id} = useLoaderData();
   
   const { data } = useQuery(singleCocktailQuery(id));
@@ -87,4 +87,4 @@ const CockTail = () => {
   )
 }
 
-export default CockTail
+export default Cocktail;
