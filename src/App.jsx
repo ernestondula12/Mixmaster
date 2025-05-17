@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
-import { About, HomeLayout, Landing, Error, NewsLetter, CockTail, SinglePageError } from "./pages";
+import { About, HomeLayout, Landing, Error, NewsLetter, Cocktail, SinglePageError } from "./pages";
 
 import { loader as landing } from "./pages/Landing";
 import {loader as singleCocktailLoader} from "./pages/CockTail";
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
         path: 'cocktail/:id',
         errorElement: <SinglePageError />,
         loader: singleCocktailLoader(queryClient),
-        element: <CockTail />
+        element: <Cocktail />
       },
       {
         path: '/newsletter',
