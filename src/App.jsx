@@ -5,7 +5,7 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { About, HomeLayout, Landing, Error, NewsLetter, Cocktail, SinglePageError } from "./pages";
 
 import { loader as landing } from "./pages/Landing";
-import {loader as singleCocktailLoader} from "./pages/CockTail";
+import {loader as singleCocktailLoader} from "./pages/Cocktail";
 import { action as newsletterAction } from "./pages/NewsLetter";
 
 const queryClient = new QueryClient({
